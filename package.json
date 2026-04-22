@@ -1,0 +1,37 @@
+{
+  "name": "playwright-first",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:dev": "cross-env ENV=dev npx playwright test",
+    "test:stage": "cross-env ENV=stage npx playwright test",
+    "allure": "rm -r allure-report npx allure generate --open allure-results"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@eslint/css": "^1.1.0",
+    "@eslint/js": "^10.0.1",
+    "@eslint/json": "^1.2.0",
+    "@eslint/markdown": "^8.0.1",
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.6.0",
+    "@typescript-eslint/eslint-plugin": "^8.58.2",
+    "@typescript-eslint/parser": "^8.58.2",
+    "eslint": "^10.2.1",
+    "globals": "^17.5.0",
+    "jiti": "^2.6.1",
+    "typescript-eslint": "^8.58.2"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.4.0",
+    "allure-playwright": "^3.7.1",
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.4.2",
+    "eslint-plugin-playwright": "^2.10.2",
+    "faker": "^5.5.3"
+  }
+}
