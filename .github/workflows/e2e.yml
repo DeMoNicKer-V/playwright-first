@@ -24,7 +24,7 @@ jobs:
               run: npx playwright install --with-deps
 
             - name: Run tests
-              run: npm run test:dev
+              run: npm playwright test
 
             - name: Upload Test Result
               if: always()
