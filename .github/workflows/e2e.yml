@@ -25,3 +25,10 @@ jobs:
 
             - name: Run tests
               run: npm run test:dev
+
+            - name: Upload Test Result
+              if: always()
+              uses: actions/upload-artifact@v4
+              with:
+                  name: Test Result
+                  path: test-results
