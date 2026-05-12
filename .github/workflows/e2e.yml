@@ -24,8 +24,6 @@ jobs:
 
       - name: Run tests
         run: npx playwright test
-        env:
-          HOME: /root
 
       - name: Upload Test Result
         if: always()
